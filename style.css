@@ -1,0 +1,185 @@
+html, body{
+    background-image: url(backg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: unset;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    background-color: pink;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 999;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.main{
+    padding: 20% 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info{
+    line-height: 2em;
+}
+
+.name{
+    color: pink;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.major{
+    color: pink;
+    font-weight: 400;
+    font-size: 2em;
+}
+.major-name{
+    font-style: italic;
+    font-weight: 999;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(30, end) forwards, blink 0.6s step-end infinite;
+}
+.about{
+    color: rgb(124, 117, 117);
+    font-size: 1em;
+}
+
+.buttons{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.buttons a{
+    text-decoration: none;
+}
+.main button{
+    color: pink;
+    background-color: white;
+    padding: 1.5em 2em;
+    font-size: 1em;
+    border-color: pink;
+    box-shadow: 0.12em 0.12em 0.1em black;
+    width: 10em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.main button:hover{
+    cursor: pointer;
+    width: 15em;
+    background-color: pink;
+    color: white;
+    transition: 0.35s; 
+}
+.main button:active{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.projects{
+    padding: 20% 15%;
+}
+.projects h1{
+    color: pink;
+    text-align: center;
+    margin-bottom: 20%;
+}
+.cards{
+    position: relative;
+    width: 70%;
+    height: 20em;
+    text-align: center;
+    margin: auto;
+}
+.card{
+    position: absolute;
+    background-color: pink;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    border-style: solid;
+    border-width: 0.25em;
+    cursor: pointer;
+}
+.card a{
+    color: white;
+    font-size: 3.5em;
+    text-decoration: none;
+}
+
+.card:nth-child(1){top: 0; left: 0; z-index: 100;}
+.card:nth-child(2){top: 1.5em; left: 1em; z-index: 99;}
+.card:nth-child(3){top: 2.5em; left: 2em; z-index: 98;}
+
+.card:hover{
+    opacity: 0.8;
+    transform: scale(1.1) translateY(-1em) translateX(-1em);
+    transition: 0.35s;
+    box-shadow: 0.5em 0.5em rgb(75, 75, 75);
+    z-index: 1000;
+}
+
+.card:active{
+    opacity: calc(0.5);
+}
+
+.certifications{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10% 10%;
+}
+.certifications h1{
+    color: pink;
+}
+.certificate{
+    width: 20em;
+    height: auto;
+    border-style: groove;
+}
+.socials a{
+    color: pink;
+    font-size: 300%;
+    margin-right: 6%;
+}
+
+.socials h1{
+    color: pink;
+    font-size: 200%;
+}
+.socials p{
+    color: pink;
+}
+
+.socials{
+    text-align: center;
+    padding: 20% 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
