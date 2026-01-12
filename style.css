@@ -160,7 +160,7 @@ header a{
 .certificate{
     width: 20em;
     height: auto;
-    border-style: groove;
+    padding: 1em;
 }
 .socials a{
     color: pink;
@@ -182,4 +182,9 @@ header a{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+.kaust{
+    background-color: rgba(255, 192, 203, 0.554);
+    padding: 5em;
 }
